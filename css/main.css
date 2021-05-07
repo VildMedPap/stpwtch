@@ -1,9 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: #2d2e2e;
+}
+
+.btn {
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #fbfbfb;
+  color: #0077c0;
+  border: 1px solid #0077c0;
+  cursor: pointer;
+  padding: 1rem 0.75rem;
+  width: 10rem;
+  margin: 1rem;
+}
+.btn:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #0077c0;
+  border: solid 1px #0077c0;
   color: #fbfbfb;
+}
+.btn--reset {
+  color: #ff1934;
+  border: 1px solid #ff1934;
+}
+.btn--reset:hover {
+  background: #ff1934;
+  border: solid 1px #ff1934;
+}
+
+.display__numbers {
+  color: #fbfbfb;
+  font-size: 3rem;
+  font-family: "Oxygen Mono", monospace;
+  font-weight: normal;
+  font-style: normal;
 }
 
 *,
@@ -62,25 +102,38 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: red;
+  border: 1px solid #fdc500;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
 .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
   height: 10rem;
-  width: 100%;
-  background: green;
+  width: 30rem;
+  background: #2d2e2e;
 }
 
 .controllers {
-  height: 10rem;
-  width: 100%;
-  background: orange;
+  border: 1px solid #ff1934;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
 .laplog {
   height: 10rem;
   width: 100%;
-  background: yellow;
+  border: 1px solid #0077c0;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
