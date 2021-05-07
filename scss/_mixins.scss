@@ -44,3 +44,15 @@
         justify-content: center;
     }
 }
+
+@mixin transition($kwargs) {
+    -webkit-transition: $kwargs;
+    -moz-transition: $kwargs;
+    transition: $kwargs;
+}
+
+@mixin radius($amount) {
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+    border-radius: $amount;
+}
