@@ -1,0 +1,29 @@
+.btn {
+    @include radius(0.3rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    background: map-get($colors, white);
+    color: map-get($colors, blue);
+    border: 1px solid map-get($colors, blue);
+    cursor: pointer;
+    padding: 1rem 0.75rem;
+    width: 10rem;
+    margin: 1rem;
+
+    &:hover {
+        @include transition(all 0.5s ease-in-out);
+        background: map-get($colors, blue);
+        border: solid 1px map-get($colors, blue);
+        color: map-get($colors, white);
+    }
+
+    &--reset {
+        color: map-get($colors, red);
+        border: 1px solid map-get($colors, red);
+
+        &:hover {
+            background: map-get($colors, red);
+            border: solid 1px map-get($colors, red);
+        }
+    }
+}
