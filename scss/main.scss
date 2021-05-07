@@ -21,9 +21,6 @@ html {
         align-items: center;
         justify-content: center;
     }
-    border: 1px solid map-get($colors, yellow);
-    padding: 0.25rem;
-    margin: 0.25rem;
 }
 
 .display {
@@ -32,12 +29,10 @@ html {
     height: 10rem;
     width: 30rem;
     background: map-get($colors, lightblack);
+    margin-bottom: 3rem;
 }
 
 .controllers {
-    border: 1px solid map-get($colors, red);
-    padding: 0.25rem;
-    margin: 0.25rem;
 }
 
 // .laplog {
