@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title stpwtch
+        link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/main.css")
+        script(src="js/app.js", defer)
+    body.container
+        .stopwatch
+            .display
+            .controllers
+                button.btn(data-action="start") start
+                button.btn(data-action="lap") lap
+                button.btn(data-action="stop") stop
+                button.btn.btn--reset(data-action="reset") reset
+            .laplog
+                ul.laplog__listItems
