@@ -11,7 +11,9 @@
   </head>
   <body class="container">
     <div class="stopwatch">
-      <div class="display"></div>
+      <div class="display">
+        <p class="display__numbers"><span class="display__numbers--minutes">00</span><span class="display__numbers--delim">:</span><span class="display__numbers--seconds">00</span><span class="display__numbers--delim">:</span><span class="display__numbers--tens">00</span></p>
+      </div>
       <div class="controllers">
         <button class="btn" data-action="start">start</button>
         <button class="btn" data-action="lap">lap</button>
@@ -19,7 +21,11 @@
         <button class="btn btn--reset" data-action="reset">reset</button>
       </div>
       <div class="laplog">
-        <ul class="laplog__listItems"></ul>
+        <ul class="laplog__listItems">
+          <li class="laplog__item">Lap 1:</li>
+          <li class="laplog__item">Lap 2:</li>
+          <li class="laplog__item">Lap 3:</li>
+        </ul>
       </div>
     </div>
   </body>

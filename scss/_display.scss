@@ -1,0 +1,5 @@
+.display__numbers {
+    color: map-get($colors, white);
+    font-size: 3rem;
+    @include OxygenMono();
+}

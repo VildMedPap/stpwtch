@@ -11,6 +11,12 @@ html(lang="en")
     body.container
         .stopwatch
             .display
+                p.display__numbers
+                    span.display__numbers--minutes 00
+                    span.display__numbers--delim :
+                    span.display__numbers--seconds 00
+                    span.display__numbers--delim :
+                    span.display__numbers--tens 00
             .controllers
                 button.btn(data-action="start") start
                 button.btn(data-action="lap") lap
@@ -18,3 +24,6 @@ html(lang="en")
                 button.btn.btn--reset(data-action="reset") reset
             .laplog
                 ul.laplog__listItems
+                    li.laplog__item Lap 1:
+                    li.laplog__item Lap 2:
+                    li.laplog__item Lap 3:
